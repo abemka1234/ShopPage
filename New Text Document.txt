@@ -1,0 +1,42 @@
+let productsDiv = document.querySelector(".products")
+
+let productCard = document.createElement("div")
+productCard.classList.add("product__card")
+productsDiv.append(productCard)
+
+let imageBlock = document.createElement("div")
+imageBlock.classList.add("card__image-block")
+productCard.append(imageBlock)
+
+let image = document.createElement("img")
+image.src = product.image
+image.classList.add("card__image")
+imageBlock.append(image)
+
+let cardDescription = document.createElement("div")
+cardDescription.classList.add("card__description")
+productCard.append(cardDescription)
+
+let cardMeta = document.createElement("div")
+cardMeta.classList.add("card__meta")
+cardDescription.append(cardMeta)
+
+let cardRating = document.createElement("div")
+cardRating.classList.add("card__rating")
+cardRating.innerHTML = product.rating
+cardMeta.append(cardRating)
+
+let cardValue = document.createElement("div")
+cardValue.classList.add("card__value")
+cardValue.innerHTML = product.value
+cardMeta.append(cardValue)
+
+let cardName = document.createElement("div")
+cardName.classList.add("card__name")
+cardName.innerHTML = product.name
+cardDescription.append(cardName)
+
+let cardPrice = document.createElement("div")
+cardPrice.classList.add("card__cost")
+cardPrice.innerHTML = product.price
+cardDescription.append(cardPrice)
